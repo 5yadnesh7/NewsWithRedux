@@ -12,6 +12,7 @@ const Home = () => {
 	const myState = useSelector((state) => state.newsChange);
   const key = jsonData.newsApiKey;
   const url = `https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=${key}`;
+  console.log(myState);
 
 //   business entertainment general health science sports technology
   useEffect(() => {
