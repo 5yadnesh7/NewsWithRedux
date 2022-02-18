@@ -5,6 +5,7 @@ import jsonData from "./config.json";
 import Axios from "axios";
 import Card from "./Card";
 import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const [newData, setnewData] = useState([]);
@@ -47,6 +48,9 @@ const Home = () => {
   return (
     <div className="main_container">
       <Header />
+      <br /><br /><br />
+      <Link to="/second">Second Page</Link><br/><br/>
+      <a href="/second">Second Page</a>
       <div className="marTop">
         {loading ? (
           <h1>Loading</h1>
